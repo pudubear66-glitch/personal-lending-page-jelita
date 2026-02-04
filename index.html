@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Putri Jelita Cucu Murdianti - Majestic Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --royal-maroon: #2d0202;
+            --deep-maroon: #5e0303;
+            --gold-bright: #ffd700;
+            --gold-premium: #d4af37;
+            --gold-dark: #8a6d3b;
+            --gold-soft: #f9d976;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at center, #5e0303 0%, #2d0202 100%);
+            background-attachment: fixed;
+            color: #f8f9fa;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Tipografi Kerajaan yang Ditingkatkan */
+        .royal-title {
+            font-family: 'Cinzel', serif;
+            letter-spacing: 0.15em;
+            background: linear-gradient(
+                to right, 
+                #bf953f, 
+                #fcf6ba, 
+                #b38728, 
+                #fbf5b7, 
+                #aa771c
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s linear infinite;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.6));
+            font-weight: 900;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        /* Subtitle dengan Gaya Playfair */
+        .majestic-subtitle {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold-soft);
+            letter-spacing: 0.05em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            line-height: 1.8;
+        }
+
+        /* Kartu Megah dengan Border Emas Gradien */
+        .majestic-card {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+            backdrop-filter: blur(25px);
+            border-radius: 40px;
+            padding: 3rem;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+
+        .majestic-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 40px;
+            padding: 3px;
+            background: linear-gradient(135deg, var(--gold-soft), transparent, var(--gold-premium), transparent, var(--gold-dark));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            opacity: 0.3;
+        }
+
+        .majestic-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 30px rgba(212, 175, 55, 0.2);
+        }
+
+        .majestic-card:hover::before {
+            opacity: 0.8;
+        }
+
+        /* Frame Foto Profil Royal */
+        .royal-frame {
+            position: relative;
+            padding: 15px;
+            background: conic-gradient(from 0deg, var(--gold-soft), var(--gold-premium), var(--gold-dark), var(--gold-soft));
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(184, 134, 11, 0.4);
+            animation: rotate-border 12s linear infinite;
+        }
+
+        @keyframes rotate-border {
+            100% { transform: rotate(360deg); }
+        }
+
+        .inner-photo {
+            animation: rotate-photo 12s linear infinite;
+        }
+
+        @keyframes rotate-photo {
+            100% { transform: rotate(-360deg); }
+        }
+
+        /* Animasi Cahaya Berkilau */
+        .sparkle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            filter: blur(1px);
+            opacity: 0;
+            animation: sparkle-anim 5s infinite;
+        }
+
+        @keyframes sparkle-anim {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.5); opacity: 0.6; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+
+        .badge-royal {
+            background: linear-gradient(45deg, #4a0404, #800000);
+            border: 1.5px solid var(--gold-premium);
+            padding: 10px 24px;
+            border-radius: 50px;
+            color: var(--gold-soft);
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+        }
+
+        .badge-royal:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            border-color: var(--gold-bright);
+        }
+
+        .gold-glow-dot {
+            width: 16px;
+            height: 16px;
+            background: radial-gradient(circle, var(--gold-bright), var(--gold-dark));
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--gold-bright);
+        }
+
+        .ornament-line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--gold-premium), transparent);
+            width: 100%;
+            margin: 2rem 0;
+        }
+
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--royal-maroon); }
+        ::-webkit-scrollbar-thumb { 
+            background: linear-gradient(var(--gold-premium), var(--gold-dark)); 
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Efek Partikel Cahaya Background -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="sparkle w-1 h-1" style="top: 15%; left: 15%; animation-delay: 0s;"></div>
+        <div class="sparkle w-2 h-2" style="top: 70%; left: 85%; animation-delay: 1.5s;"></div>
+        <div class="sparkle w-1.5 h-1.5" style="top: 40%; left: 5%; animation-delay: 3s;"></div>
+        <div class="sparkle w-2 h-2" style="top: 85%; left: 25%; animation-delay: 4.5s;"></div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-32 relative z-10">
+        
+        <!-- Header Majestic -->
+        <header class="text-center mb-32">
+            <div class="flex justify-center mb-12">
+                <div class="royal-frame">
+                    <div class="w-40 h-40 md:w-56 md:h-56 rounded-full bg-black overflow-hidden border-4 border-[#2d0202]">
+                        <img src="foto_jelita.jpeg" alt="Putri Jelita" class="w-full h-full object-cover inner-photo">
+                    </div>
+                </div>
+            </div>
+            <h1 class="royal-title text-5xl md:text-8xl mb-8">
+                PUTRI JELITA<br>CUCU MURDIANTI
+            </h1>
+            <div class="flex items-center justify-center gap-4 mb-8">
+                <div class="h-[1px] w-20 bg-gradient-to-r from-transparent to-gold-premium"></div>
+                <span class="text-gold-premium text-2xl">✧</span>
+                <div class="h-[1px] w-20 bg-gradient-to-l from-transparent to-gold-premium"></div>
+            </div>
+            <p class="majestic-subtitle text-2xl md:text-3xl max-w-4xl mx-auto italic opacity-90">
+                "Wujud keanggunan yang abadi, memancarkan kemuliaan dalam setiap langkah kehidupan."
+            </p>
+            <div class="mt-16 flex flex-wrap justify-center gap-6">
+                <span class="badge-royal">Keluarga Kerajaan Magetan</span>
+                <span class="badge-royal">Bakat Mulia</span>
+                <span class="badge-royal">Visi Agung</span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <!-- Kolom Pendidikan (Kiri) -->
+            <div class="lg:col-span-7">
+                <section class="majestic-card">
+                    <div class="flex items-center mb-14">
+                        <div class="w-20 h-20 bg-gradient-to-br from-gold-premium to-gold-dark rounded-3xl flex items-center justify-center mr-8 shadow-2xl border border-gold-soft/30">
+                            <span class="text-4xl">🏛️</span>
+                        </div>
+                        <h2 class="royal-title text-4xl">Manifesto Ilmu</h2>
+                    </div>
+
+                    <div class="space-y-20 relative">
+                        <div class="absolute left-[7px] top-6 bottom-6 w-[3px] bg-gradient-to-b from-gold-premium via-gold-dark/40 to-transparent"></div>
+                        
+                        <!-- Item 1 -->
+                        <div class="relative pl-14 group">
+                            <div class="absolute left-[-1px] top-2 gold-glow-dot group-hover:scale-125 transition-transform"></div>
+                            <span class="text-[10px] font-black uppercase tracking-[0.5em] text-gold-soft mb-3 block">ERA KEJAYAAN • 2023 — KINI</span>
+                            <h3 class="text-3xl font-bold text-white mb-3 tracking-wide">SMAN 1 Magetan</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed font-light italic">Mengasah ketajaman berpikir dan memperluas cakrawala di pusat keunggulan intelektual.</p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative pl-14 group opacity-80">
+                            <div class="absolute left-[-1px] top-2 w-4 h-4 rounded-full bg-gold-dark/40 border-2 border-gold-premium shadow-inner"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-[0.5em] text-gold-dark mb-3 block">PONDASI KARAKTER • 2020 — 2023</span>
+                            <h3 class="text-3xl font-bold text-white mb-3 tracking-wide">SMPN 4 Magetan</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed font-light">Masa pembentukan disiplin dan integritas diri yang kokoh laksana pilar istana.</p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative pl-14 group opacity-60">
+                            <div class="absolute left-[-1px] top-2 w-4 h-4 rounded-full bg-gold-dark/20 border-2 border-gold-dark/40"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-[0.5em] text-gold-dark mb-3 block">AWAL PERJALANAN • 2014 — 2020</span>
+                            <h3 class="text-3xl font-bold text-white mb-3 tracking-wide">SDN 014 Balikpapan Selatan</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed font-light">Meniti langkah pertama dalam pengembaraan pengetahuan di cakrawala pesisir.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Kolom Keluarga (Kanan) -->
+            <div class="lg:col-span-5">
+                <section class="majestic-card">
+                    <div class="flex items-center mb-12">
+                        <div class="w-20 h-20 bg-gradient-to-br from-gold-premium to-gold-dark rounded-3xl flex items-center justify-center mr-8 shadow-2xl border border-gold-soft/30">
+                            <span class="text-4xl">🛡️</span>
+                        </div>
+                        <h2 class="royal-title text-4xl">Garis Darah</h2>
+                    </div>
+
+                    <!-- Orang Tua -->
+                    <div class="mb-14">
+                        <h4 class="text-[11px] font-black uppercase tracking-[0.5em] text-gold-premium/80 mb-8 border-l-4 border-gold-premium pl-6">Pilar Agung</h4>
+                        <div class="space-y-6">
+                            <div class="p-6 bg-white/5 rounded-[2rem] border border-gold-premium/10 flex items-center group hover:bg-gold-premium/10 hover:border-gold-premium/40 transition-all duration-500">
+                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-dark to-royal-maroon flex items-center justify-center text-gold-soft font-black mr-6 shadow-lg text-xl">S</div>
+                                <div>
+                                    <p class="text-xl font-bold text-white group-hover:text-gold-soft">Sugiono</p>
+                                    <p class="text-[10px] text-gold-dark/80 uppercase font-black tracking-widest mt-1">Sang Ayahanda • Saudagar</p>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-white/5 rounded-[2rem] border border-gold-premium/10 flex items-center group hover:bg-gold-premium/10 hover:border-gold-premium/40 transition-all duration-500">
+                                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-dark to-royal-maroon flex items-center justify-center text-gold-soft font-black mr-6 shadow-lg text-xl">U</div>
+                                <div>
+                                    <p class="text-xl font-bold text-white group-hover:text-gold-soft">Upik Dwi Murdianti</p>
+                                    <p class="text-[10px] text-gold-dark/80 uppercase font-black tracking-widest mt-1">Sang Ibunda • Farmasis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paman & Bibi -->
+                    <div class="mb-14">
+                        <h4 class="text-[11px] font-black uppercase tracking-[0.5em] text-gold-premium/80 mb-8 border-l-4 border-gold-premium pl-6">Bangsawan Kerabat</h4>
+                        <div class="space-y-5">
+                            <div class="flex items-center p-5 bg-white/5 rounded-2xl border border-white/5 hover:border-gold-soft/30 transition-all">
+                                <span class="text-gold-premium text-2xl mr-5">⚜️</span>
+                                <div>
+                                    <p class="text-lg font-bold text-white">Ardi Satria Murdianto</p>
+                                    <p class="text-[9px] text-gold-dark uppercase font-bold tracking-widest">Paman • Abdi Kesehatan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-5 bg-white/5 rounded-2xl border border-white/5 hover:border-gold-soft/30 transition-all">
+                                <span class="text-gold-premium text-2xl mr-5">⚜️</span>
+                                <div>
+                                    <p class="text-lg font-bold text-white">Puput</p>
+                                    <p class="text-[9px] text-gold-dark uppercase font-bold tracking-widest">Bibi • Penegak Keadilan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saudara -->
+                    <div>
+                        <h4 class="text-[11px] font-black uppercase tracking-[0.5em] text-gold-premium/80 mb-8 border-l-4 border-gold-premium pl-6">Trah Saudara</h4>
+                        <div class="space-y-4 px-2">
+                            <div class="flex items-center text-sm font-bold text-gold-soft/70 hover:text-gold-bright transition-all cursor-default group">
+                                <span class="w-2 h-2 bg-gold-premium rounded-full mr-4 shadow-[0_0_10px_#ffd700] group-hover:scale-150 transition-transform"></span>
+                                Alkalifi Edgaraka Hudayana
+                            </div>
+                            <div class="flex items-center text-sm font-bold text-gold-soft/70 hover:text-gold-bright transition-all cursor-default group">
+                                <span class="w-2 h-2 bg-gold-premium rounded-full mr-4 shadow-[0_0_10px_#ffd700] group-hover:scale-150 transition-transform"></span>
+                                Syarga Naryama Putra Satria
+                            </div>
+                            <div class="flex items-center text-sm font-bold text-gold-soft/70 hover:text-gold-bright transition-all cursor-default group">
+                                <span class="w-2 h-2 bg-gold-premium rounded-full mr-4 shadow-[0_0_10px_#ffd700] group-hover:scale-150 transition-transform"></span>
+                                Syahla Ayumna Putri Satria
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Footer Majestic -->
+        <footer class="mt-40 text-center pb-20">
+            <div class="ornament-line"></div>
+            <div class="inline-flex items-center px-16 py-4 bg-gradient-to-r from-transparent via-gold-dark/10 to-transparent">
+                <p class="text-[14px] royal-title font-black uppercase tracking-[0.6em]">
+                    ✧ PUTRI JELITA CUCU MURDIANTI ✧
+                </p>
+            </div>
+            <p class="mt-8 text-[10px] text-gold-dark/50 font-black tracking-[0.4em] uppercase">Mengutamakan Kebahagiaan dan Kedamaian • MMXXVI</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
